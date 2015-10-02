@@ -1,14 +1,44 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title> <%= yield :title %> | Albanian Hiking Club </title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+	<head>
+	  <title> <%= yield :title %> | Albanian Hiking Club </title>
 
-<%= yield %>
+	  <!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 
-</body>
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+	  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+	  <%= csrf_meta_tags %>
+	  <!--[if lt IE 9]>
+	    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
+	    </script>
+	  <![endif]-->
+	</head>
+	<body>
+		<header class="navbar navbar-fixed-top navbar-inverse">
+			<div class="container">
+				<%= link_to "Albanian Hiking Club", root_path, id: "logo" %>
+				<nav>
+					<ul class="nav navbar-nav navbar-right"> 
+						<li><%= link_to "Home", root_path %></li> 
+						<li><%= link_to "About", static_pages_about_path %></li> 
+						<li><%= link_to "Calendar", static_pages_calendar_path %></li> 
+						<li><%= link_to "Hikes", static_pages_hikes_path %></li> 
+						<li><%= link_to "Membership", static_pages_membership_path %></li> 
+						<li><%= link_to "Pictures", static_pages_pictures_path %></li>
+						<li><%= link_to "Contact", static_pages_contact_path %></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<div class="container">
+			<%= yield %>
+		</div>
+	</body>
 </html>
