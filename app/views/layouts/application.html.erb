@@ -4,7 +4,7 @@
 	  <title> <%= yield :title %> | Albanian Hiking Club </title>
 
 		<!-- Mobile support -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
     <!-- Twitter Bootstrap -->
     <link href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
@@ -19,7 +19,6 @@
 		<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"> -->
 		<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css"> -->
 		<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> -->
-
 
 	  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
 	  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
@@ -40,7 +39,7 @@
 	        </button>
 	        <a class="navbar-brand" id="logo" href="javascript:void(0)">Albanian Hiking Club</a>
 		    </div>
-		    <div class="navbar-collapse collapse navbar-warning-collapse">
+		    <!-- <div class="navbar-collapse collapse navbar-warning-collapse"> -->
 	        <ul class="nav navbar-nav">
 						<li><%= link_to "Home", root_path %></li> 
 						<li><%= link_to "About", static_pages_about_path %></li> 
@@ -54,7 +53,7 @@
 						<li><%= link_to "Sign Up", "#" %></li> 
 						<li><%= link_to "Log In", "#" %></li> 
 	        </ul>
-		    </div>
+		    <!-- </div> -->
 		  </div>
 		</header>
 
