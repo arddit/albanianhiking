@@ -15,10 +15,7 @@
  */
 
 #logo {
-  float: left;
-  margin-right: 10px;
-  font-size: 1.7em;
-  /*color: red;*/
+  font-size: 1.8em;
   text-transform: uppercase;
   letter-spacing: -1px;
   padding-top: 15px;
@@ -30,9 +27,9 @@
   text-decoration: none;
 }
 
-#header{
-  background: rgb(0, 0, 0); 
-  background: rgba(0, 0, 0, 0.8); 
+li:hover {
+  color: white;
+  text-decoration: none;
 }
 
 body {

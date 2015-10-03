@@ -1,11 +1,14 @@
 Rails.application.routes.draw do
-  get 'static_pages/home'
-  get 'static_pages/about'
-  get 'static_pages/membership'
-  get 'static_pages/hikes'
-  get 'static_pages/calendar'
-  get 'static_pages/pictures'
-  get 'static_pages/contact'
+
+  devise_for :users
+  resources :users
+
+  get 'about' 			=> 'static_pages#about'
+  get 'membership'  => 'static_pages#membership'
+  get 'hikes' 			=> 'static_pages#hikes'
+  get 'calendar' 		=> 'static_pages#calendar'
+  get 'pictures' 		=> 'static_pages#pictures'
+  get 'contact' 		=> 'static_pages#contact'
 
   root 'static_pages#home'
 
