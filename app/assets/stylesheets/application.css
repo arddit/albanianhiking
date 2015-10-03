@@ -18,10 +18,10 @@
   float: left;
   margin-right: 10px;
   font-size: 1.7em;
-  color: red;
+  /*color: red;*/
   text-transform: uppercase;
   letter-spacing: -1px;
-  padding-top: 9px;
+  padding-top: 15px;
   font-weight: bold;
 }
 
@@ -31,7 +31,7 @@
 }
 
 #header{
-  background: rgb(0, 0, 0); /* This is for ie8 and below */
+  background: rgb(0, 0, 0); 
   background: rgba(0, 0, 0, 0.8); 
 }
 
