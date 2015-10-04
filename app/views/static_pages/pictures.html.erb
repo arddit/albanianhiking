@@ -1,13 +1,11 @@
 <% provide(:title, "Pictures") %>
 
 <h1>Pictures</h1>
-<p>Welcome to Albanian Hiking club of NYC Area</p>
+<p>Here are some pictures from our latest trips.</p>
 <hr>
-This page is still under development, please come back later.
-
 <br>
 <br>
 
 <% cache ("flickr_sidebar") do %>
-	<%= render_flickr_sidebar_widget('46281061@N03', 12, 2) %>
+	<%= render_flickr_sidebar_widget('46281061@N03') %>
 <% end %>
