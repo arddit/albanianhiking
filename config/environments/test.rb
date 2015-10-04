@@ -13,6 +13,8 @@ Rails.application.configure do
   config.eager_load = false
 
   config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.perform_deliveries = true
 
   # Configure static file server for tests with Cache-Control for performance.
   config.serve_static_files   = true
