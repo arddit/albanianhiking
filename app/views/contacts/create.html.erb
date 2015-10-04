@@ -1,0 +1,10 @@
+<% provide(:title, "Contact Us") %>
+
+<div>
+  <% flash.each do |key, value| %>
+    <div>
+      <a href="#" data-dismiss="alert">×</a>
+        <%= value %>
+    </div>
+  <% end %>
+</div>

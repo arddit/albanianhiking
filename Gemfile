@@ -28,6 +28,8 @@ gem 'pg', '0.17.1'
 gem 'rails_12factor', '0.0.2'
 gem 'devise'
 gem 'flickr_fu'
+gem 'mail_form'
+gem 'simple_form'
 
 # Use Unicorn as the app server
 # gem 'unicorn'

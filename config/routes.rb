@@ -12,4 +12,7 @@ Rails.application.routes.draw do
 
   root 'static_pages#home'
 
+  match '/contacts',    to: 'contacts#new',			via: 'get'
+	resources "contacts", only: [:new, :create]
+
 end
