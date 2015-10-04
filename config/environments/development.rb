@@ -48,6 +48,7 @@ Rails.application.configure do
                     :password       => "slimRD87",
                     :openssl_verify_mode  => 'none',
                     :enable_starttls_auto => true
+  }
 
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true

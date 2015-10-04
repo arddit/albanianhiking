@@ -88,4 +88,5 @@ Rails.application.configure do
                     :password       => "slimRD87",
                     :openssl_verify_mode  => 'none',
                     :enable_starttls_auto => true
+  }
 end
