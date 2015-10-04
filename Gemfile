@@ -27,6 +27,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'pg', '0.17.1'
 gem 'rails_12factor', '0.0.2'
 gem 'devise'
+gem 'flickr_fu'
 
 # Use Unicorn as the app server
 # gem 'unicorn'

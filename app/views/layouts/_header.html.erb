@@ -1,0 +1,46 @@
+<header class="navbar navbar-warning navbar-fixed-top">
+	<div class="container">
+    <div class="navbar-header">
+      <a><%= link_to "Albanian Hiking Club", root_path, class: "navbar-brand mdi-image-filter-hdr",id: "logo" %></a>
+      <button class = "navbar-toggle" data-toggle = "collapse" data-target = ".navHeaderCollapse">
+        <span class = "icon-bar"></span>
+        <span class = "icon-bar"></span>
+        <span class = "icon-bar"></span>
+    	</button>
+    </div>
+
+      <ul class="collapse navbar-collapse navHeaderCollapse">
+      <div class="row nav navbar-nav navbar-right">
+			  <% if user_signed_in? %>
+					<li><%= link_to "Users", users_path, class: "mdi-action-face-unlock" %></li> 
+					<li class="dropdown">
+            <a href="#" class="dropdown-toggle mdi-action-list" data-toggle="dropdown">
+              Account <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+							<li><%= link_to "Profile", user_registration_path, class: "mdi-action-account-circle" %></li> 
+							<li><%= link_to "Settings", edit_user_registration_path(current_user), class: "mdi-action-list" %></li>
+							<li class="divider"></li>
+							<li>
+								<%= link_to "Log out", destroy_user_session_path, method: "delete", class: "mdi-action-perm-identity" %> 
+							</li>
+						</ul>
+					</li> 
+				<% else %>
+					<li><%= link_to "Log In", new_user_session_path, class: "mdi-action-account-circle" %></li> 
+					<li><%= link_to "Sign Up", new_user_registration_path, class: "mdi-action-perm-identity" %></li> 
+				<% end %>
+				</div>
+
+				<div class="row nav navbar-nav">
+	  			<li class="panel-warning"><%= link_to "Home",        root_path, 				class: "mdi-action-home" %></li> 
+					<li class="panel-warning"><%= link_to "About",       about_path, 				class: "mdi-navigation-more-horiz" %></li>
+					<li class="panel-warning"><%= link_to "Calendar",    calendar_path, 		class: "mdi-action-perm-contact-cal" %></li>
+					<li class="panel-warning"><%= link_to "Hikes",       hikes_path, 				class: "mdi-maps-directions-walk" %></li> 
+					<li class="panel-warning"><%= link_to "Membership",  membership_path, 	class: "mdi-action-wallet-membership" %></li>
+					<li class="panel-warning"><%= link_to "Pictures",    pictures_path, 		class: "mdi-action-picture-in-picture" %></li>
+					<li class="panel-warning"><%= link_to "Contact",     contact_path, 			class: "mdi-communication-contacts" %></li>
+				</div>
+      </ul>
+  </div>
+</header>
