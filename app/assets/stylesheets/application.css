@@ -33,13 +33,21 @@ li:hover {
 }
 
 body {
-  padding-top: 120px;
+  padding-top: 110px;
   margin: auto;
  /* text-align: center;*/
 }
 
 .btn{
   text-align: center;
+  width: 100%;
+}
+
+.navbtn{
+  text-transform: capitalize;
+  /*margin: auto;*/
+  text-align: center;
+  width: 115%;
 }
 
 .panel{
@@ -59,6 +67,17 @@ ul
 input, textarea, .uneditable-input {
   width: 100%;
   margin-bottom: 15px;
+}
+
+.navbar-collapse {
+  max-height: none !important;
+  overflow-x: none !important;
+  max-width: auto;
+}
+
+.text{
+  text-align: justify;
+  margin: 20px;
 }
 
 /*flash*/
@@ -118,3 +137,31 @@ input, textarea, .uneditable-input {
 }
 
 .hidden { display: none; }
+
+/* footer */
+
+footer {
+  margin-top: 75px;
+  padding-top: 5px;
+  border-top: 2px solid #eaeaea;
+  color: #000;
+}
+footer a {
+  color: #000;
+}
+footer a:hover {
+  color: orange;
+  text-decoration: none;
+}
+footer small {
+  text-align: center;
+}
+footer ul {
+  float: right;
+  list-style: none;
+}
+footer ul li {
+  float: left;
+  margin-left: 15px;
+}
+

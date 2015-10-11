@@ -2,23 +2,25 @@
 
 <h2>Send us a message</h2>
 
+<p>Have a question? Send us a note using the form below and someone from the team will be in touch soon.</p>
+
   <%= form_for @contact, :html => {:class => '' } do |f| %>
     <div class="row">
       <div class="col-md-5">
-        Name:
+        <h3>Name:</h3>
         <%= f.text_field :name, :required => true, class: 'form-control' %>
       </div>
     </div>
     <div class="row">
       <div class="col-md-5">
-        Email:
+        <h3>Email:</h3>
         <%= f.email_field :email, :required => true, class: 'form-control' %>
       </div>
     </div>
     <div class="row">
       <div class="col-md-5">
-        Message:
-        <%= f.text_field :message, :as => :text, :required => true, class: 'form-control' %>
+        <h3>Message:</h3>
+        <%= f.text_area :message, :as => :text, :required => true, size: "30x5", class: 'form-control' %>
       </div>
     </div>
     <div class= "hidden">
